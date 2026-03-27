@@ -6,7 +6,7 @@ int main() {
     long long n, m, a, b;
     cin >> n >> m >> a >> b;
     
-    long long cost = n * a;
+    long long cost = min(n * a, (n / m) * b + (n % m) * a);
     
     cout << cost << endl;
     return 0;
